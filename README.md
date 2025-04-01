@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Todo List
 
-## Getting Started
+A simple Todo List application built with Next, TypeScript, and TailwindCSS. Users can add, update, complete, and delete tasks.
 
-First, run the development server:
+Features
+✅ Create a account
+✅ Add new todos
+✅ Mark todos as complete
+✅ Remove todos
+✅ Prioritize tasks
+✅ Modal for task details
+✅ Persist data with API calls
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Tech Stack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Frontend: Next, TypeScript, TailwindCSS
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Backend: Golang, Gin, Postgres
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+State Management: React useState, useEffect
 
-## Learn More
+Installation
 
-To learn more about Next.js, take a look at the following resources:
+Clone the repository:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+git clone https://github.com/yourusername/todo-list.git
+cd todo-list
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Install dependencies:
 
-## Deploy on Vercel
+yarn install # or npm install
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Run the development server:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+yarn dev # or npm run dev
+
+API Endpoints
+
+GET /todos - Fetch all todos
+
+POST /todos - Add a new todo
+
+PATCH /todos/:id - Update a todo
+
+DELETE /todos/:id - Delete a todo
+
+Usage
+
+Click the Add Todo button to create a task.
+
+Click the checkbox to mark a todo as complete.
+
+Click on a todo to open the details modal.
+
+Click the delete button to remove a task.
+
+Folder Structure
+
+/todo-list
+├── src
+│ ├── components # Reusable components
+│ ├── pages # Page views
+│ ├── services # API functions
+│ ├── styles # Tailwind styles
+│ ├── App.tsx # Main App component
+│ ├── index.tsx # Entry point
+├── public # Static assets
+├── package.json # Dependencies & scripts
+├── README.md # Project documentation
+
+Contributing
+
+Feel free to submit a PR if you find bugs or want to improve functionality.
+
+License
+
+This project is licensed under the MIT License.
