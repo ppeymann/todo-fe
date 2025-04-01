@@ -1,3 +1,4 @@
+"use client";
 import { AuthorizationProvider } from "../../context/AuthorizationProvider";
 import "./globals.css";
 
