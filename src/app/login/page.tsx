@@ -2,7 +2,7 @@
 import ProtectedLayout from "@/components/ProtectedLayout";
 import React, { useContext, useState } from "react";
 import { initSignUpInput, SignUpInput } from "../../../types/account.dto";
-import { apiSignIn, apiSignUp } from "../../../api/account";
+import { apiSignIn, apiSignUp } from "../../../api/account.api";
 import { ApiBaseResponse } from "../../../api";
 import { TokenBundleDTO } from "../../../types/index.dto";
 import { AuthorizationProviderContext } from "../../../context/AuthorizationProvider";

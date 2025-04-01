@@ -1,3 +1,5 @@
+import { todo } from "./todo.dto";
+
 export type SignInInput = {
   user_name: string;
   password: string;
@@ -12,8 +14,8 @@ export type SignUpInput = {
 
 export type accountDTO = {
   ID: number;
-  CreateAt: Date;
-  UpdatedAt: Date;
+  CreateAt: string;
+  UpdatedAt: string;
   DeletedAt: {
     Time: Date;
     Valid: boolean;
@@ -23,6 +25,7 @@ export type accountDTO = {
   password: string;
   last_name: string;
   first_name: string;
+  todos: todo[];
 };
 
 export const initSignInInput: SignInInput = {
@@ -35,4 +38,16 @@ export const initSignUpInput: SignUpInput = {
   password: "",
   first_name: "",
   last_name: "",
+};
+
+export const initAccount: accountDTO = {
+  ID: 0,
+  CreateAt: "",
+  UpdatedAt: "",
+  DeletedAt: null,
+  user_name: "",
+  password: "",
+  last_name: "",
+  first_name: "",
+  todos: [],
 };
