@@ -23,8 +23,8 @@ Installation
 
 Clone the repository:
 
-git clone https://github.com/yourusername/todo-list.git
-cd todo-list
+git clone https://github.com/ppeymann/todo-fe.git
+cd todo-fe
 
 Install dependencies:
 
@@ -40,11 +40,13 @@ GET /todos - Fetch all todos
 
 POST /todos - Add a new todo
 
-PATCH /todos/:id - Update a todo
+PATCH /todos/status/:id/:status - Update a todo for complete it
 
 DELETE /todos/:id - Delete a todo
 
 Usage
+
+Sign Up in Site
 
 Click the Add Todo button to create a task.
 
@@ -56,22 +58,11 @@ Click the delete button to remove a task.
 
 Folder Structure
 
-/todo-list
+/todo-fe
 ├── src
 │ ├── components # Reusable components
-│ ├── pages # Page views
-│ ├── services # API functions
-│ ├── styles # Tailwind styles
-│ ├── App.tsx # Main App component
-│ ├── index.tsx # Entry point
+│ ├── apps # Page views
 ├── public # Static assets
+├── api # API functions
 ├── package.json # Dependencies & scripts
 ├── README.md # Project documentation
-
-Contributing
-
-Feel free to submit a PR if you find bugs or want to improve functionality.
-
-License
-
-This project is licensed under the MIT License.
